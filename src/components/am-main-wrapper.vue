@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="am-main-wrapper ">
         <am-login></am-login>
     </div>
 </template>
@@ -10,7 +10,7 @@
     export default {
         name: "am-main-wrapper",
         props: {},
-        data(){
+        data() {
             return {
                 title: "",
             }
@@ -19,9 +19,7 @@
             amLogin
         },
         computed: {},
-        methods: {
-
-        },
+        methods: {},
         watch: {},
         mounted() {
 
@@ -30,5 +28,10 @@
 </script>
 
 <style scoped>
-
+    .am-main-wrapper {
+        width: 1920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 </style>

@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Товар-1",
+      "img": "sam1.png",
+      "price": 100,
+      "description": "qweqweqwrqwrqwr"
+    },
+    {
+      "id": 2,
+      "name": "Товар-2",
+      "img": "sam2.png",
+      "price": 200,
+      "description": "qweqweqwrqwrqwr"
+    },
+    {
+      "id": 3,
+      "name": "Товар-3",
+      "img": "sam3.png",
+      "price": 300,
+      "description": "qweqweqwrqwrqwr"
+    },
+    {
+      "id": 4,
+      "name": "Товар-4",
+      "img": "sam4.png",
+      "price": 400,
+      "description": "qweqweqwrqwrqwr"
+    },
+    {
+      "id": 5,
+      "name": "Товар-5",
+      "img": "sam5.png",
+      "price": 500,
+      "description": "qweqweqwrqwrqwr"
+    },
+    {
+      "id": 6,
+      "name": "Товар-6",
+      "img": "sam6.png",
+      "price": 600,
+      "description": "qweqweqwrqwrqwr"
+    }
+  ]
+}

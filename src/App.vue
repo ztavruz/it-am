@@ -1,21 +1,25 @@
 <template>
     <div id="app">
-        <am-main-wrapper></am-main-wrapper>
+        <am-wrapper></am-wrapper>
     </div>
 </template>
 
 <script>
-    import amMainWrapper from "./components/am-main-wrapper";
+    import amWrapper from "./components/am-wrapper";
 
     export default {
         name: 'App',
         components: {
-            amMainWrapper
+            amWrapper
         }
     }
 </script>
 
 <style>
+    html{
+        padding: 0;
+        margin: 0;
+    }
 
     #app {
         display: flex;

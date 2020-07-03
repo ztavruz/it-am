@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <p class="title">Вход в личный кабинет</p>
+        <p class="title">восстановление доступа к личному кабинету</p>
 
         <div class="icon-user "></div>
 
@@ -17,18 +17,18 @@
                 <label for="fields-item__password">
                     <div class="fields-item__icon icon_password"></div>
                 </label>
-                <input class="fields-item__text" id="fields-item__password" placeholder="Пароль" type="password">
+                <input class="fields-item__text" id="fields-item__password" placeholder="ИНН организации" type="password">
             </div>
         </div>
 
-        <div class="recovery">
-            <label for="recovery__link">
-                <a class="recovery__title">Не можете войти?</a>
-            </label>
-            <a class="recovery__link" id="recovery__link" href="#">Восстановление пароля</a>
-        </div>
+<!--        <div class="recovery">-->
+<!--            <label for="recovery__link">-->
+<!--                <a class="recovery__title">Не можете войти?</a>-->
+<!--            </label>-->
+<!--            <a class="recovery__link" id="recovery__link" href="#">Восстановление пароля</a>-->
+<!--        </div>-->
 
-        <button class="entrance-btn">Войти</button>
+        <button class="entrance-btn">Запросить восстановление</button>
 
         <div class="icon-wifi"></div>
 
@@ -38,7 +38,7 @@
 
 <script>
     export default {
-        name: "am-login",
+        name: "am-recovery",
         props: {},
         data() {
             return {
@@ -55,11 +55,10 @@
 </script>
 
 <style scoped>
-    * {
+    *{
         margin: 0;
         padding: 0;
     }
-
     .main {
         width: 100%;
         background: #2E2E2E;
@@ -78,9 +77,8 @@
 
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     }
-
     .title {
-        width: 485px;
+        width: 528px;
         max-width: 50%;
         font-family: Rubik;
         font-style: normal;
@@ -99,7 +97,7 @@
         width: 80px;
         height: 80px;
         background: url("../assets/images/login/icon login.png") no-repeat center;
-        margin-top: 65px;
+        margin-top: 55px;
     }
 
     .line {
@@ -110,18 +108,18 @@
         top: 323.04px;
         border-bottom: 3px solid #27ADBB;
         transform: rotate(-180deg);
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     /*================================fields=========================================*/
     .fields {
         width: 550px;
         max-width: 90%;
-        margin-top: 65px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-top: 60px;
     }
 
     .fields-item {
@@ -149,7 +147,7 @@
     }
 
     .icon_password {
-        background-image: url("../assets/images/login/password.png");
+        background-image: url("../assets/images/recovery/inn.png");
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -201,18 +199,19 @@
     }
 
     .entrance-btn {
+
         width: 420px;
         max-width: 90%;
         height: 66.21px;
-        background: rgba(255, 255, 255, 0.6);
+
+        background: #EFEEEE;
         border: 1px solid rgba(255, 255, 255, 0.2);
         box-sizing: border-box;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.2);
         border-radius: 5px;
 
-        margin-top: 44px;
+        margin-top: 24px;
         /*text-align: center;*/
-
         font-family: Proxima Nova Cond;
         font-style: normal;
         font-weight: 600;

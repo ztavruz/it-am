@@ -1,14 +1,14 @@
 <template>
     <div class="main">
-        <am-login></am-login>
-        <am-recovery></am-recovery>
+<!--        <am-login></am-login>-->
+<!--        <am-recovery></am-recovery>-->
         <am-main-layout></am-main-layout>
     </div>
 </template>
 
 <script>
-    import amLogin from './am-login'
-    import amRecovery from './am-recovery'
+    // import amLogin from './am-login'
+    // import amRecovery from './am-recovery'
     import amMainLayout from './am-main-layout'
 
     export default {
@@ -20,8 +20,8 @@
             }
         },
         components: {
-            amLogin,
-            amRecovery,
+            // amLogin,
+            // amRecovery,
             amMainLayout
         },
         computed: {},

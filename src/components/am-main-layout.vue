@@ -1,25 +1,30 @@
 <template>
     <div class="main">
-        <div class="header br">
-            <div class="row-top br">
+        <div class="header ">
+            <div class="row-top ">
                 <div class="row-top__left"></div>
-                <div class="row-top__right br">
+                <div class="row-top__right ">
                     <div class="company-field">
-                        <div class="company-field__title">Наименование организации: </div>
-                        <div class="company-field__name">Skynet</div>
+                        <p class="company-field__title">Наименование организации: </p>
+                        <p class="company-field__name field__name">"Skynet"</p>
                     </div>
                     <div class="user-field">
-                        <div class="user-field__title">Пользователь: </div>
-                        <div class="user-field__name">ztavruz</div>
+                        <p class="user-field__title">Пользователь: </p>
+                        <p class="user-field__name field__name">ztavruz</p>
                     </div>
                 </div>
             </div>
-            <div class="row-menu br">
-                <div class="row-menu__item">Онлайн-трансляция</div>
-                <div class="row-menu__item">архив</div>
-                <div class="row-menu__item">GPS-трекинг</div>
-                <div class="row-menu__item">администрирование</div>
-                <div class="row-menu__events"></div>
+            <div class="row-menu ">
+                <div class="row-menu__left">
+                    <a href="#" class="row-menu__item">Онлайн-трансляция</a>
+                    <a href="#" class="row-menu__item">архив</a>
+                    <a href="#" class="row-menu__item">GPS-трекинг</a>
+                    <a href="#" class="row-menu__item">администрирование</a>
+                </div>
+                <div class="row-menu__right">
+                    <a href="#" class="row-menu__events"></a>
+                </div>
+
             </div>
         </div>
         <div class="content">
@@ -45,13 +50,34 @@
         padding: 0;
     }
     .main {
-        width: 100%;
+        max-width: 100%;
         background: #2E2E2E;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
 
         height: 1080px;
+    }
+    p{
+        font-family: Proxima Nova Cond;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 40px;
+        /* or 148% */
+        color: #FFFFFF;
+    }
+    a{
+        text-decoration: none;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
     }
 
     .header{
@@ -60,6 +86,7 @@
         width: 100%;
     }
     .row-top{
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -67,8 +94,19 @@
     .row-top__right{
         display: flex;
         flex-direction: column;
+        padding: 16px 31px;
+
+        border-left: 2.5px solid rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0px 1px 10px 2px rgba(255, 255, 255, 0.25);
+    }
+    .field__name{
+        margin-left: 10px;
     }
     .company-field{
+        display: flex;
+        flex-direction: row;
+    }
+    .user-field{
         display: flex;
         flex-direction: row;
     }
@@ -79,10 +117,52 @@
     .row-menu{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2.5px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 2.5px solid rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0px 1px 10px 4px rgba(255, 255, 255, 0.25);
+        /*transform: rotate(90deg);*/
+    }
+    .row-menu__left{
+        width: 81%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1.5%;
+    }
+    .row-menu__right{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 19%;
     }
 
+    .row-menu__item{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .row-menu__events{
+        width: 81px;
+        height: 81px;
+        margin-right: -10% ;
+        border-left: 2.5px solid rgba(255, 255, 255, 0.3);
+        border-right: 2.5px solid rgba(255, 255, 255, 0.3);
+        background: url("../assets/images/main/notification.png") no-repeat center;
+
+        position: relative;
+    }
+
+    /*==============content====================*/
+    .content{
+        height: 500px;
+    }
+
+    /*==============footer====================*/
     .footer {
         width: 100%;
+        height: 233px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -90,7 +170,7 @@
     .icon-wifi {
         width: 94px;
         height: 76px;
-        margin-top: 105px;
+        margin-top: 53px;
         background: url("../assets/images/login/wifi.png") no-repeat center;
     }
 

@@ -61,7 +61,7 @@
     }
 
     .main {
-        width: 100%;
+        max-width: 100%;
         background: #2E2E2E;
         display: flex;
         flex-direction: column;
